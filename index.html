@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      button {
+        cursor: pointer;
+      }
+      :root {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        background: coral;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      main {
+        display: grid;
+        place-items: center;
+      }
+      .timer {
+        font-size: 6rem;
+      }
+      #timer-button {
+        border: 0;
+        padding: 0.5em;
+        background-color: tomato;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="timer"><span id="timestamp">0.0.0</span>s</p>
+      <button id="timer-button">Start Timer</button>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
