@@ -11,6 +11,10 @@ function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+function round(number) {
+  return Math.round((number + Number.EPSILON) * 100) / 100
+}
+
 btnStart.addEventListener("click", () => {
   const interval = 100;
   let time = Math.floor(random(3000, 8000));
