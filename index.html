@@ -17,7 +17,7 @@
         height: 100%;
       }
       body {
-        background: coral;
+        background: mediumspringgreen;
         display: grid;
         place-items: center;
         width: 100%;
@@ -38,12 +38,24 @@
         background-color: tomato;
         font-size: 2rem;
       }
+      #output {
+        font-size: 4rem;
+      }
+      @keyframes rainbow {
+        from {
+          backdrop-filter: hue-rotate(0deg);
+        }
+        to {
+          backdrop-filter: hue-rotate(360deg);
+        }
+      }
     </style>
   </head>
   <body>
     <main>
-      <p class="timer"><span id="timestamp">0.0.0</span>s</p>
+      <p class="timer"><span id="timestamp">0.0</span>s</p>
       <button id="timer-button">Start Timer</button>
+      <p id="output"></p>
     </main>
     <script src="./script.js"></script>
   </body>
